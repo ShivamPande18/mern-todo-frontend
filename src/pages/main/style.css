@@ -1,0 +1,190 @@
+.todoMain{
+    background-color: #f9f9f9;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.todoHeader{
+    /* margin-left: 200px; */
+    margin: 10px 30px;
+}
+
+.todoHeader h1{
+    text-align: center;
+}
+
+.todoHeaderAdd{
+    display: flex;
+    flex-direction: column;
+}
+
+.todoHeaderAdd button{
+    background-color: rgb(60, 60, 255);
+    border: none;
+    color: white;
+    padding: 3px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.todoHeaderAdd button:hover{
+    background-color:  rgb(55, 55, 214);
+    cursor: pointer;
+}
+
+
+.todoList{
+    margin-top: 30px;
+}
+
+.todo{
+    margin: 10px 30px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;  
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo:hover{
+    cursor: pointer;
+    margin: 10px 27px;
+}
+
+.todoUpper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+
+.todoUpper h1{
+    font-size: 15px;
+}
+
+.todoIcons{
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.todoIcon{
+    margin-left: 10px;
+}
+
+.todoIconTrash{
+    color: rgb(255, 80, 80);
+}
+
+.todoIcon:hover{
+    cursor: pointer;
+}
+
+.todo hr{
+    margin-bottom: 5px;
+    margin-right: 90px;
+    background-color: rgb(223, 223, 223);
+    border: none;
+    height: 1px;
+}
+
+.todoLower p{
+    font-size: 10px;
+}
+
+.todoEdit{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.493);
+    z-index: 100;
+}
+
+.todoEditBox{
+    background-color: black;
+    /* width: fit-content; */
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.todoEditBox input{
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+.todoEditBox button{
+    padding: 5px 10px;
+    border: none;
+    align-self: flex-end;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.todoEditBox button:hover{
+    cursor: pointer;
+}
+
+.form{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: rgba(158, 151, 151, 0.397);
+    z-index: 100;
+}
+
+
+.formCont{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 90vw;
+    overflow-y: scroll;
+    padding: 20px 50px;
+}
+
+.formCont form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formCont form h1{
+    margin-bottom: 30px;
+}
+
+.formCont input{
+    margin-bottom: 20px;
+    padding: 5px 10px;
+}
+
+.formCont button{
+    background-color: whitesmoke;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.formCont button:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.formCont input::placeholder{
+    color: red;
+}
